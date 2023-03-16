@@ -1,4 +1,13 @@
 body{
-    background-color: rgba(99, 38, 231, 0.658);
-    
+    background-color: rgba(0, 0, 0, 0.658);
+    color:rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#gameWindow{
+    width: 800px;
+    height: 592px;
+    grid-column-start: 2;
+    background-color:blue ;
 }
