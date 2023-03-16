@@ -4,6 +4,7 @@ body{
     display: grid;
     grid-template-columns: auto 800px auto ;
     grid-template-rows: auto auto;
+    animation: all 1 ease-in-out;
 }
 
 #mainTitle{
@@ -34,4 +35,13 @@ body{
 .foreground{
     position: absolute;
     z-index: 1000;
+}
+
+.tilemap{
+
+}
+
+#mainCharater{
+    top: 200px;
+    left: 200px;
 }
