@@ -2,12 +2,36 @@ body{
     background-color: rgba(0, 0, 0, 0.658);
     color:rgb(255, 255, 255);
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto 800px auto ;
+    grid-template-rows: auto auto;
+}
+
+#mainTitle{
+    grid-column-start: 2;
+    grid-row: 1;
+    text-align: center;
 }
 
 #gameWindow{
+    position: relative;
     width: 800px;
     height: 592px;
     grid-column-start: 2;
+    grid-row-start: 2;
     background-color:blue ;
+}
+
+.background{
+    position: absolute;
+    z-index: 0;
+}
+
+.character{
+    position: absolute;
+    z-index: 100;
+}
+
+.foreground{
+    position: absolute;
+    z-index: 1000;
 }
