@@ -48,3 +48,19 @@ body{
     left: 200px;
     transition: all 1s ease-in-out;
 }
+
+#house1{
+    top: 84px;
+    left: 81px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+}
+
+#house2{
+    top: 71px;
+    left: 243px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+}
