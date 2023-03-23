@@ -28,7 +28,7 @@ body{
     z-index: 0;
 }
 
-.charater{
+.character{
     position: absolute;
     z-index: 100;
     
@@ -49,6 +49,8 @@ body{
     transition: all 1s ease-in-out;
 }
 
+
+
 #house1{
     top: 84px;
     left: 81px;
@@ -63,4 +65,30 @@ body{
     width: 16px;
     height: 16px;
     background-color: white;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #ffffff;
+	border-radius: .60px;
+    padding:5px;
+    color: black;
+    font-size: 10PX;
+    left: 8px;
+    top: -5px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 15%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #ffffff;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
 }

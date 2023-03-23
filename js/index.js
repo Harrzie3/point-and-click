@@ -7,6 +7,8 @@ const offsetCharacter =16;
 
 const mainCharacter = document.getElementById("mainCharacter");
 const gameWindow = document.getElementById("gameWindow");
+const characterAudio = document.getElementById("characterAudio");
+const mainCharacterSpeech = document.getElementById("mainCharacterSpeech")
 
 
 gameWindow.onclick = function(e) {
@@ -16,24 +18,29 @@ gameWindow.onclick = function(e) {
    var y = e.clientY - Rect.top;
    mainCharacter.style.left = x - offsetCharacter +"px";
    mainCharacter.style.top = y - offsetCharacter + "px";
-    console.log(x);
+    
 
 
-    console.log(e.target.id);
+   showSpeech("yes i do")
 
     switch(e.target.id){
         case "door1":
             characterAudio.play(); 
-            console.log("this is not your house bozo");
+            showSpeech("this is not your house bozo");
             break;
         case "door2":
             //sonething insert here
-            console.log("this is not your house bozo");
+            showSpeech("this is not your house bozo");
             break;
         default:
             // do something when it doesn't have a case
-            console.log("bozo nothing is here");
+            showSpeech("bozo nothing is here");
             break;
 
     }
+    // console.log(x);
+}
+
+function showSpeech(dialog){
+    mainCharacterSpeech.innerText = dialog;
 }
