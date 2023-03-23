@@ -71,25 +71,28 @@ body{
 	position: relative;
 	background: #ffffff;
 	border-radius: .60px;
-    padding:5px;
+    padding:5px 5px 5px 30;
     color: black;
     font-size: 10PX;
-    left: 8px;
-    top: -5px;
+    left: 80px;
+    top: 0px;
     opacity: 0;
+    width: 300px;
+    transition: all 1s ease-in-out;
 }
 
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 15%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-top-color: #ffffff;
-	border-bottom: 0;
-	border-left: 0;
-	margin-left: -10px;
-	margin-bottom: -20px;
+
+
+#dialogBar{
+    height: 64px; 
+    bottom: 0px;
+}
+
+#brownBar{
+    position: absolute;
+    background-color: rgb(101, 65, 10);
+    height: 32px;
+    width: 800;
+    bottom: 0px;
+    left: 0;
 }

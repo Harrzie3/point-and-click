@@ -32,6 +32,10 @@ gameWindow.onclick = function(e) {
             //sonething insert here
             showSpeech("this is not your house bozo");
             break;
+        case "tree1":
+            //sonething insert here
+            showSpeech("yes this tree is green");
+            break;
         default:
             // do something when it doesn't have a case
             hideSpeech();
