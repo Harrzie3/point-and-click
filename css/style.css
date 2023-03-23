@@ -56,7 +56,7 @@ body{
     left: 81px;
     width: 16px;
     height: 16px;
-    background-color: white;
+    
 }
 
 #house2{
@@ -64,7 +64,7 @@ body{
     left: 243px;
     width: 16px;
     height: 16px;
-    background-color: white;
+   
 }
 
 .speech-bubble {
@@ -76,6 +76,7 @@ body{
     font-size: 10PX;
     left: 8px;
     top: -5px;
+    opacity: 0;
 }
 
 .speech-bubble:after {

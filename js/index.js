@@ -24,17 +24,17 @@ gameWindow.onclick = function(e) {
    showSpeech("yes i do")
 
     switch(e.target.id){
-        case "door1":
+        case "house1":
             characterAudio.play(); 
             showSpeech("this is not your house bozo");
             break;
-        case "door2":
+        case "house2":
             //sonething insert here
             showSpeech("this is not your house bozo");
             break;
         default:
             // do something when it doesn't have a case
-            showSpeech("bozo nothing is here");
+            hideSpeech();
             break;
 
     }
@@ -42,5 +42,12 @@ gameWindow.onclick = function(e) {
 }
 
 function showSpeech(dialog){
-    mainCharacterSpeech.innerText = dialog;
+    mainCharacterSpeech.style.opacity =1;
+    mainCharacterSpeech.innerHTML = dialog;
 }
+
+function hideSpeech(){
+    mainCharacterSpeech.style.opacity =0;
+    mainCharacterSpeech.innerHTML = "...";
+}
+
