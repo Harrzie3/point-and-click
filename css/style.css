@@ -1,10 +1,11 @@
 body{
-    background-color: rgba(0, 0, 0, 0.658);
-    color:rgb(255, 255, 255);
     display: grid;
     grid-template-columns: auto 800px auto ;
     grid-template-rows: auto auto;
-    
+    gap:20px;
+    margin: 0px;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #000;
 }
 
 #mainTitle{
@@ -20,6 +21,7 @@ body{
     grid-column-start: 2;
     grid-row-start: 2;
     background-color:blue ;
+    transition: all 1s ease-in-out;
     
 }
 
@@ -67,32 +69,60 @@ body{
    
 }
 
-.speech-bubble {
-	position: relative;
+.speech-bubble{
 	background: #ffffff;
-	border-radius: .60px;
-    padding:5px 5px 5px 30;
+	border-radius: 60px;
+    padding:5px 5px 5px 30px;
     color: black;
     font-size: 10PX;
-    left: 80px;
-    top: 0px;
     opacity: 0;
-    width: 300px;
+    width: 250px;
     transition: all 1s ease-in-out;
 }
 
-
+#hero{
+    left: 3px;
+    top: 5px;
+}
 
 #dialogBar{
     height: 64px; 
     bottom: 0px;
 }
 
+#setMainDialog{
+    position: relative;
+    height: 64px;
+    bottom: 800px;
+}
+
+#mainCharacterSpeech{
+    position: absolute;
+    left: 80px;
+    top: 0px;
+}
+
+#counterCharacter{
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+}
+
+
+#counterSpeech{
+    right: 80px;
+    top: 0px;
+}
+
+
+
 #brownBar{
     position: absolute;
-    background-color: rgb(101, 65, 10);
+    background-color: #442c1c;
     height: 32px;
-    width: 800;
+    width: 800px;
     bottom: 0px;
-    left: 0;
+   
 }
+
+

@@ -10,17 +10,29 @@
 <body id="main">
     
     <div id="gameWindow">
-        <!--foreground-->
-
+       
+        <!--dialog bar-->
         <div id="dialogBar" class ="foreground">
-            <img id="hero" class="foreground" src="img/portrait.png" alt="portrait" >
-        </div> 
+            <div id="setMainDialog">
+                  </div> 
+               
+
+                 <div id="counterSpeech" class="foreground" src="" alt="peepeepoopoo"></div>
+                 <img id="counterCharacter" class="foreground">
+                 
+                 <div id="brownBar" class="foreground"></div>
+                 <img id="hero" class="foreground" src="img/portrait.png" alt="portrait" >
+                 <div id="mainCharacterSpeech" class="speech-bubble"> i hate american</div>
+            </div>
+        
+
+          <!--foreground-->
         <div id="house1" class="foreground"></div>
         <div id="house2" class="foreground"></div>
 
         <!--character-->
         <div id="mainCharacter" class="character">
-            <div id="mainCharacterSpeech" class="speech-bubble"> i hate american</div>
+           
 
             <img src="img/man.png" alt="character">
         </div>
@@ -38,8 +50,8 @@
 
     <h1 id="mainTitle"> </h1>
     <audio id="characterAudio">
-        <sources src="/audio/Audio js/high pitch voice.mp3" type="audio/mpeg">
-        </sources>
+        <sources src="/audio/Audio js/Gibberish - Sound Effect_01.mp3" type="audio/mpeg">
+     
     </audio>
     <script src="js/index.js"></script>
 
