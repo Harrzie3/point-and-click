@@ -8,6 +8,10 @@ body{
     background-color: #000;
 }
 
+p {
+    margin: 0px;
+}
+
 #mainTitle{
     grid-column-start: 2;
     grid-row: 1;
@@ -69,6 +73,24 @@ body{
    
 }
 
+#tree1{
+   
+    top: 338px;
+    left: 71px;
+    width: 32px;
+    height: 32px;
+    transition: all 1s ease-in-out;
+}
+
+#boat{
+   
+    top: 346px;
+    left: 760px;
+    width: 32px;
+    height: 32px;
+}
+
+
 .speech-bubble{
 	background: #ffffff;
 	border-radius: 60px;
@@ -82,7 +104,21 @@ body{
 
 #hero{
     left: 3px;
-    top: 5px;
+    top: 11px;
+}
+
+#tree{
+    right: -800px;
+    top: -8px;
+}
+
+#platformContainer {
+    top: 192px;
+    left: 416px;
+}
+
+#platform {
+    transition: all 1s ease-in-out;
 }
 
 #dialogBar{
@@ -103,15 +139,16 @@ body{
 }
 
 #counterCharacter{
-    top: 0px;
-    right: 0px;
+    top: -8px;
+    right: -800px;
     opacity: 0;
 }
 
 
 #counterSpeech{
-    right: 80px;
-    top: 0px;
+    position: absolute;
+    right: -709px;
+    top: -15px;
 }
 
 
@@ -125,4 +162,21 @@ body{
    
 }
 
+#inventoryBox {
+    left: 10px;
+    top: 10px;
+    width: 180px;
+    height: 80px;
+    border: #fff 2px solid;
+    background-color: #442c1c;
+    padding: 10px;
+    color: #fff;
+}
 
+#inventoryList {
+    list-style-type: square;
+    padding: 0px;
+    margin: 0px 0px 0px 12px;
+    font-size: 12px;
+
+}

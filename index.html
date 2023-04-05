@@ -17,18 +17,29 @@
                   </div> 
                
 
-                 <div id="counterSpeech" class="foreground" src="" alt="peepeepoopoo"></div>
-                 <img id="counterCharacter" class="foreground">
+                  
+                  <div id="mainCharacterSpeech" class="speech-bubble"> i hate american</div>
                  
                  <div id="brownBar" class="foreground"></div>
                  <img id="hero" class="foreground" src="img/portrait.png" alt="portrait" >
-                 <div id="mainCharacterSpeech" class="speech-bubble"> i hate american</div>
+                 <img id="counterCharacter" class="foreground" src="img/tree.png" alt="tree the other character">
+                 <div id="counterSpeech" class="foreground speech-bubble">...</div>
+                 
             </div>
-        
+
+          <!--Inventory-->
+          <div id="inventoryBox" class="foreground">
+            <p>Inventory</p>
+            <ul id="inventoryList">
+
+            </ul>
+        </div>
 
           <!--foreground-->
         <div id="house1" class="foreground"></div>
         <div id="house2" class="foreground"></div>
+        <div id="tree1" class="foreground"></div>
+        <div id="boat" class="foreground"></div>
 
         <!--character-->
         <div id="mainCharacter" class="character">
@@ -51,6 +62,10 @@
     <h1 id="mainTitle"> </h1>
     <audio id="characterAudio">
         <sources src="/audio/Audio js/Gibberish - Sound Effect_01.mp3" type="audio/mpeg">
+
+      <audio id="counterAudio">
+          <source src="audio/Audio js/high pitch voice.mp3" type="audio/mpeg">
+         </audio>
      
     </audio>
     <script src="js/index.js"></script>
